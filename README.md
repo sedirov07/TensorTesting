@@ -35,12 +35,12 @@
 - WebDriver для браузера, например, Chrome WebDriver
 
 ## Установка и Запуск
-# Установка
+### Установка
 1. Установите необходимые библиотеки:
    ```bash
    pip install -r requirements.txt
 2. Убедитесь, что chrome webdriver установлен и добавлен в переменную PATH.
 3. Для создания отчетов при помощи allure убедитесь, что установлен и добавлен в переменную PATH и JAVA_HOME NodeJS, после чего пропишите: npm install -g allure-commandline
-# Запуск
+### Запуск
 1. pytest --allure-dir=allure-results
 2. allure serve allure-results
