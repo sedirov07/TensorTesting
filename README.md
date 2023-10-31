@@ -40,7 +40,14 @@
    ```bash
    pip install -r requirements.txt
 2. Убедитесь, что chrome webdriver установлен и добавлен в переменную PATH.
-3. Для создания отчетов при помощи allure убедитесь, что установлен и добавлен в переменную PATH и JAVA_HOME NodeJS, после чего пропишите: npm install -g allure-commandline
+3. Для создания отчетов при помощи allure убедитесь, что установлен и добавлен в переменную PATH и JAVA_HOME Node.js, после чего пропишите:
+   ```bash
+   npm install -g allure-commandline
+   
 ### Запуск
-1. pytest --allure-dir=allure-results
-2. allure serve allure-results
+1. Запуск всех тестов с созданием allure-отчета
+   ```bash
+   pytest --allure-dir=allure-results
+2. Открытие allure-отчета с использованием веб-интерфейса (Node.js)
+   ```bash
+   allure serve allure-results
